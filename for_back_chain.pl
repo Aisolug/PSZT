@@ -50,4 +50,3 @@ fact(not_sasiad(dolnoslaskie,slaskie)).
 fact(stolica(opole,opolskie)).
 fact(lezy_w(opolskie,polska)).
 
-
