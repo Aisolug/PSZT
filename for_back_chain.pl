@@ -1,10 +1,10 @@
-:- dynamic fact/1.
 :- dynamic used/1.
 
 :- op(800,xfx,=>).
 :- op(300,xfy,and).
 
-:- consult('knowledge_base.pl').
+:- consult('rules.pl').
+:- consult('facts.pl').
 
 write_proved(X) :- write(X), write(" is proved"), nl.
 write_true(X) :- write(X), write(" is true"), nl.
