@@ -1,7 +1,7 @@
 rule(sasiad(A,B) => sasiad(B,A)).
 rule(not_sasiad(A,B) => not_sasiad(B,A)).
 rule(lezy_miedzy(X,Y,Z) => lezy_miedzy(X,Z,Y)).
-rule(sasiad(X,Y) and sasiad(X,Z) and not_sasiad(Y,Z) => lezy_miedzy(X,Y,Z)).
+rule(sasiad(X,Y) and sasiad(X,Z) and not_sasiad(Y,Z) and noeq(Y,Z) => lezy_miedzy(X,Y,Z)).
 rule(stolica(A,B) => lezy_w(A,B)).
 rule(not_lezy_w(A,Z) => not_stolica(A,Z)).
 rule(lezy_w(A,B) => not_sasiad(A,B)).
